@@ -5,7 +5,10 @@ import { UpdateUploadCloudinaryDto } from './dto/update-upload-cloudinary.dto';
 @Injectable()
 export class UploadCloudinaryService {
   create(createUploadCloudinaryDto: CreateUploadCloudinaryDto) {
-    return 'This action adds a new uploadCloudinary';
+    // createUploadCloudinaryDto;
+    const { image } = createUploadCloudinaryDto;
+
+    return { image };
   }
 
   findAll() {
@@ -17,6 +20,7 @@ export class UploadCloudinaryService {
   }
 
   update(id: number, updateUploadCloudinaryDto: UpdateUploadCloudinaryDto) {
+    updateUploadCloudinaryDto;
     return `This action updates a #${id} uploadCloudinary`;
   }
 

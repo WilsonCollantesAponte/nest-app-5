@@ -1,1 +1,3 @@
-export class CreateUploadCloudinaryDto {}
+export class CreateUploadCloudinaryDto {
+  image: string;
+}
